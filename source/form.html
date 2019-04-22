@@ -13,16 +13,16 @@
       <button class="main-nav__toggle" type="button">Открыть меню</button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
-          <a href="catalog.html">Каталог товаров</a>
+          <a class="site-list__link" href="catalog.html">Каталог товаров</a>
         </li>
         <li class="site-list__item">
-          <a href="#">Вязание на заказ</a>
+          <a class="site-list__link" href="#">Вязание на заказ</a>
         </li>
         <li class="site-list__item">
-          <a href="#">Поиск по сайту</a>
+          <a class="site-list__link" href="#">Поиск по сайту</a>
         </li>
         <li class="site-list__item">
-          <a href="#">Корзина: пока пуста</a>
+          <a class="site-list__link" href="#">Корзина: пока пуста</a>
         </li>
       </ul>
     </nav>
@@ -32,77 +32,89 @@
     <p class="page-form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами,
     чтобы уточнить детали.</p>
     <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="order-form__category product-type">
-        <legend class="product-type__title">Тип</legend>
-        <ul class="product-type__list">
-          <li class="product-type__item">
-            <input class="visually-hidden product-type__radio" id="accessories" type="radio" name="type" checked>
-            <label for="accessories">Аксессуар для интерьера</label>
+      <fieldset class="order-form__category">
+        <legend class="order-form__category-name">Тип</legend>
+        <ul class="order-form__list">
+          <li class="radio-block">
+            <input class="visually-hidden radio-block__radio" id="accessories" type="radio" name="type" checked>
+            <label class="radio-block__text" for="accessories">Аксессуар для интерьера</label>
           </li>
-          <li class="product-type__item">
-            <input class="visually-hidden product-type__radio" id="toy" type="radio" name="type">
-            <label for="toy">Детская игрушка</label>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="order-form__category product-color">
-        <legend class="product-color__title">Цвет</legend>
-        <ul class="product-color__list">
-          <li class="product-color__item">
-            <input class="visually-hidden product-color__checkbox" id="white" type="checkbox" name="color" checked>
-            <label for="white">Белый</label>
-          </li>
-          <li class="product-color__item">
-            <input class="visually-hidden product-color__checkbox" id="gray" type="checkbox" name="color" checked>
-            <label for="gray">Серый</label>
-          </li>
-          <li class="product-color__item">
-            <input class="visually-hidden product-color__checkbox" id="tiffani" type="checkbox" name="color">
-            <label for="tiffani">"Тиффани"</label>
-          </li>
-          <li class="product-color__item">
-            <input class="visually-hidden product-color__checkbox" id="black" type="checkbox" name="color">
-            <label for="black">Черный</label>
-          </li>
-          <li class="product-color__item">
-            <input class="visually-hidden product-color__checkbox" id="pink" type="checkbox" name="color">
-            <label for="pink">Розовый</label>
-          </li>
-          <li class="product-color__item">
-            <input class="visually-hidden product-color__checkbox" id="orange" type="checkbox" name="color">
-            <label for="orange">Оранжевый</label>
+          <li class="radio-block">
+            <input class="visually-hidden radio-block__radio" id="toy" type="radio" name="type">
+            <label class="radio-block__text" for="toy">Детская игрушка</label>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="order-form__category buyer-name">
-        <legend class="buyer-name__title">ФИО</legend>
-          <label>
-            <b class="buyer-name__item">Имя:</b>
-            <input type="text" name="name" placeholder="Введите ваше имя*" required>
-          </label>
-          <label>
-            <b class="buyer-name__item">Фамилия:</b>
-            <input type="text" name="surname" placeholder="Укажите фамилию*" required>
-          </label>
-          <label>
-            <b class="buyer-name__item">Отчество:</b>
-            <input type="text" name="second-name" placeholder="Отчество, если желаете">
-          </label>
+      <fieldset class="order-form__category">
+        <legend class="order-form__category-name">Цвет</legend>
+        <ul class="order-form__list">
+          <li class="checkbox-block">
+            <input class="visually-hidden checkbox-block__checkbox" id="white" type="checkbox" name="color" checked>
+            <label class="checkbox-block__text" for="white">Белый</label>
+          </li>
+          <li class="checkbox-block">
+            <input class="visually-hidden checkbox-block__checkbox" id="gray" type="checkbox" name="color" checked>
+            <label class="checkbox-block__text" for="gray">Серый</label>
+          </li>
+          <li class="checkbox-block">
+            <input class="visually-hidden checkbox-block__checkbox" id="tiffani" type="checkbox" name="color">
+            <label class="checkbox-block__text" for="tiffani">"Тиффани"</label>
+          </li>
+          <li class="checkbox-block">
+            <input class="visually-hidden checkbox-block__checkbox" id="black" type="checkbox" name="color">
+            <label class="checkbox-block__text" for="black">Черный</label>
+          </li>
+          <li class="checkbox-block">
+            <input class="visually-hidden checkbox-block__checkbox" id="pink" type="checkbox" name="color">
+            <label class="checkbox-block__text" for="pink">Розовый</label>
+          </li>
+          <li class="checkbox-block">
+            <input class="visually-hidden checkbox-block__checkbox" id="orange" type="checkbox" name="color">
+            <label class="checkbox-block__text" for="orange">Оранжевый</label>
+          </li>
+        </ul>
       </fieldset>
-      <fieldset class="order-form__category phone-number">
-        <legend class="phone-number__title">Тел</legend>
-        <label class="visually-hidden" for="phone">Номер телефона:</label>
-        <input id="phone" type="tel" name="buyer-phone" placeholder="+7 XXX XXX XX XX*" required>
+      <fieldset class="order-form__category">
+        <legend class="order-form__category-name">ФИО</legend>
+        <div class="field-text">
+          <label class="field-text__name">
+            <b class="field-text__text">Имя:</b>
+            <input class="field-text__input" type="text" name="name" placeholder="Введите ваше имя*" required>
+          </label>
+        </div>
+        <div class="field-text">
+          <label class="field-text__name">
+            <b class="field-text__text">Фамилия:</b>
+            <input class="field-text__input" type="text" name="surname" placeholder="Укажите фамилию*" required>
+          </label>
+        </div>
+        <div class="field-text">
+          <label class="field-text__name">
+            <b class="field-text__text">Отчество:</b>
+            <input class="field-text__input" type="text" name="second-name" placeholder="Отчество, если желаете">
+          </label>
+        </div>
       </fieldset>
-      <fieldset class="order-form__category buyer-email">
-        <legend class="buyer-email__title">E-mail</legend>
-        <label class="visually-hidden" for="email">E-mail:</label>
-        <input id="email" type="email" name="mail" placeholder="Ваш Email*" required>
+      <fieldset class="order-form__category">
+        <legend class="order-form__category-name">Тел</legend>
+        <div class="field-text__name">
+          <label class="visually-hidden" for="phone">Номер телефона:</label>
+          <input class="field-text__input" id="phone" type="tel" name="buyer-phone" placeholder="+7 XXX XXX XX XX*" required>
+        </div>
       </fieldset>
-      <fieldset class="order-form__category info">
-        <legend class="info__title">Доп</legend>
-        <label class="visually-hidden" for="information">Дополнительная информация:</label>
-        <textarea id="information" name="info" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+      <fieldset class="order-form__category">
+        <legend class="order-form__category-name">E-mail</legend>
+        <div class="field-text__name">
+          <label class="visually-hidden" for="email">E-mail:</label>
+          <input class="field-text__input" id="email" type="email" name="mail" placeholder="Ваш Email*" required>
+        </div>
+      </fieldset>
+      <fieldset class="order-form__category">
+        <legend class="order-form__category-name">Доп</legend>
+        <div class="field-textarea__name">
+          <label class="visually-hidden" for="information">Дополнительная информация:</label>
+          <textarea class="field-textarea__input" id="information" name="info" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </div>
       </fieldset>
       <p class="order-form__legend">*Поля обязательные для заполнения</p>
       <input class="order-form__button button" type="submit" value="Отправить заказ">
@@ -113,13 +125,13 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__list-item">
-            <a class="social__link social__link--instagram" href="#">Мы в Instagram</a>
+            <a class="social-link social-link--instagram" href="#">Мы в Instagram</a>
           </li>
           <li class="social__list-item">
-            <a class="social__link social__link--facebook" href="#">Мы в Facebook</a>
+            <a class="social-link social-link--facebook" href="#">Мы в Facebook</a>
           </li>
           <li class="social__list-item">
-            <a class="social__link social__link--twitter" href="#">Мы в Twitter</a>
+            <a class="social-link social-link--twitter" href="#">Мы в Twitter</a>
           </li>
         </ul>
       </div>

@@ -13,16 +13,16 @@
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="catalog.html">Каталог товаров</a>
+            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Вязание на заказ</a>
+            <a class="site-list__link" href="#">Вязание на заказ</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Поиск по сайту</a>
+            <a class="site-list__link" href="#">Поиск по сайту</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Корзина: пока пуста</a>
+            <a class="site-list__link" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
       </nav>
@@ -42,23 +42,17 @@
       </section>
       <section class="special-offer">
         <h2 class="special-offer__title">Вязаные корзинки</h2>
-        <section class="special-offer__item offer-product">
+        <section class="offer-product">
           <p class="offer-product__description">Экологичекси чистая пряжа, ручная работа. Доступны в шести
           расцветках, и трех размерах.</p>
-          <table class="offer-product__profile">
-            <tr>
-              <td class="offer-product__category">Цвет:</td>
-              <td class="offer-product__value"> "Тиффани"/серый</td>
-            </tr>
-            <tr>
-              <td class="offer-product__category">Диаметр:</td>
-              <td class="offer-product__value">25 см</td>
-            </tr>
-            <tr>
-              <td class="offer-product__category">Высота:</td>
+          <dl class="offer-product__profile">
+            <dt class="offer-product__category">Цвет:</dt>
+              <dd class="offer-product__value"> "Тиффани"/серый</dd>
+            <dt class="offer-product__category">Диаметр:</dt>
+              <dd class="offer-product__value">25 см</dd>
+            <td class="offer-product__category">Высота:</td>
               <td class="offer-product__value">15 см</td>
-            </tr>
-          </table>
+          </dl>
           <img src="http://placehold.it/260x317" width="260" height="317" alt="Товар">
           <p class="offer-product__price">Цена:990 руб.</p>
         </section>
@@ -75,31 +69,27 @@
           <li class="features__item features__item--present">Поставляется в подарочной упаковке</li>
         </ul>
       </section>
-      <section class="reviews">
-        <h2 class="reviews__title">Отзывы</h2>
-        <blockquote class="reviews__item">
-          <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
+      <section class="review">
+        <h2 class="review__title">Отзывы</h2>
+        <blockquote class="review__item">
+          <p class="review__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
           лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии
           сразу стали более стильными, а также набирают больше лайков!</p>
-          <cite class="reviews__author-name">Анастасия Красильникова</cite>
-          <cite class="reviews__author-social">@misssssiskras</cite>
+          <cite class="review__author-name">Анастасия Красильникова</cite>
+          <cite class="review__author-social">@misssssiskras</cite>
         </blockquote>
-        <button class="reviews__prev" type="button">Назад</button>
-        <button class="reviews__next" type="button">Вперед</button>
-        <button class="reviews__write button" type="button">Написать</button>
+        <button class="review__prev" type="button">Назад</button>
+        <button class="review__next" type="button">Вперед</button>
+        <button class="review__write button" type="button">Написать</button>
       </section>
       <section class="contacts">
         <h3 class="contacts__title">Контакты</h3>
-        <table class="contacts__list">
-          <tr>
-            <td class="contacts__category">e-mail:</td>
-            <td class="contacts__value">info@mimimishkashop.ru</td>
-          </tr>
-          <tr>
-            <td class="contacts__category">адрес:</td>
-            <td class="contacts__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
-          </tr>
-        </table>
+        <dl class="contacts__list">
+          <dt class="contacts__category">e-mail:</dt>
+            <dd class="contacts__value">info@mimimishkashop.ru</dd>
+          <dt class="contacts__category">адрес:</dt>
+            <dd class="contacts__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</dd>
+        </dl>
         <div class="contacts__map">Map</div>
         <button class="contacts__button button" type="button">Напишите нам</button>
       </section>
@@ -109,13 +99,13 @@
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__list-item">
-              <a class="social__link social__link--instagram" href="#">Мы в Instagram</a>
+              <a class="social-link social-link--instagram" href="#">Мы в Instagram</a>
             </li>
             <li class="social__list-item">
-              <a class="social__link social__link--facebook" href="#">Мы в Facebook</a>
+              <a class="social-link social-link--facebook" href="#">Мы в Facebook</a>
             </li>
             <li class="social__list-item">
-              <a class="social__link social__link--twitter" href="#">Мы в Twitter</a>
+              <a class="social-link social-link--twitter" href="#">Мы в Twitter</a>
             </li>
           </ul>
         </div>
@@ -148,7 +138,7 @@
             </li>
           </ul>
         </fieldset>
-        <input class="size-choose__button button" type="submit" value="Добавить">
+        <input class="modal__button button" type="submit" value="Добавить">
       </form>
     </section>
   </body>
