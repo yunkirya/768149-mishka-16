@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="http://placehold.it/150x100" width="320" height="80" alt="Мишка">
+      <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Мишка">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -28,7 +29,9 @@
     </nav>
   </header>
   <main class="page-form">
-    <h2 class="page-form__title">Вязание на заказ</h2>
+    <div class="page-form__wrapper">
+      <h2 class="page-form__title">Вязание на заказ</h2>
+    </div>
     <p class="page-form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами,
     чтобы уточнить детали.</p>
     <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
@@ -97,22 +100,22 @@
       </fieldset>
       <fieldset class="order-form__category">
         <legend class="order-form__category-name">Тел</legend>
-        <div class="field-text__name">
-          <label class="visually-hidden" for="phone">Номер телефона:</label>
+        <div class="field-text">
+          <label class="visually-hidden field-text__name" for="phone">Номер телефона:</label>
           <input class="field-text__input" id="phone" type="tel" name="buyer-phone" placeholder="+7 XXX XXX XX XX*" required>
         </div>
       </fieldset>
       <fieldset class="order-form__category">
         <legend class="order-form__category-name">E-mail</legend>
-        <div class="field-text__name">
-          <label class="visually-hidden" for="email">E-mail:</label>
+        <div class="field-text">
+          <label class="visually-hidden field-text__name" for="email">E-mail:</label>
           <input class="field-text__input" id="email" type="email" name="mail" placeholder="Ваш Email*" required>
         </div>
       </fieldset>
       <fieldset class="order-form__category">
         <legend class="order-form__category-name">Доп</legend>
-        <div class="field-textarea__name">
-          <label class="visually-hidden" for="information">Дополнительная информация:</label>
+        <div class="field-textarea">
+          <label class="visually-hidden field-textarea__name" for="information">Дополнительная информация:</label>
           <textarea class="field-textarea__input" id="information" name="info" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </div>
       </fieldset>
