@@ -1,8 +1,25 @@
+.page-form {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 1805px;
+  margin: 0 auto;
+}
+
 .page-form__wrapper {
+  width: 320px;
+  height: 176px;
+
   background-color: #f1f1f1;
 }
 
+.page-form__note {
+  display: none;
+}
+
 .page-form__title {
+  margin: 65px auto;
+
   font-size: 27px;
   line-height: 30px;
 }
@@ -10,5 +27,29 @@
 .page-form__text {
   font-size: 13px;
   line-height: 24px;
-  color: #444444;
+  color: $text-darkgrey;
+}
+
+@media (min-width: $tablet-width) {
+  .page-form {
+    width: 768px;
+    height: 1777px;
+    margin-top: -88px;
+  }
+
+  .page-form__wrapper {
+    width: 768px;
+    height: 225px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-form {
+    width: 1150px;
+  }
+
+  .page-form__wrapper {
+    width: 1150px;
+    height: 255px;
+  }
 }

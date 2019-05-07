@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>HTML Academy: Мишка</title>
-    <link href="css/style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>HTML Academy: Мишка</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Мишка">
+      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -25,11 +27,18 @@
         <li class="site-list__item">
           <a class="site-list__link" href="#">Корзина: пока пуста</a>
         </li>
+        <li class="site-list__item main-nav__list--show">
+          <a class="site-list__link" href="#">Новые поступления</a>
+        </li>
+        <li class="site-list__item main-nav__list--show">
+          <a class="site-list__link" href="#">Распродажа</a>
+        </li>
       </ul>
     </nav>
   </header>
   <main class="page-form">
     <div class="page-form__wrapper">
+      <p class="page-form__note">Бесплатная доставка по России</p>
       <h2 class="page-form__title">Вязание на заказ</h2>
     </div>
     <p class="page-form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами,
@@ -39,11 +48,11 @@
         <legend class="order-form__category-name">Тип</legend>
         <ul class="order-form__list">
           <li class="radio-block">
-            <input class="visually-hidden radio-block__radio" id="accessories" type="radio" name="type" checked>
+            <input class="radio-block__radio" id="accessories" type="radio" name="type" checked>
             <label class="radio-block__text" for="accessories">Аксессуар для интерьера</label>
           </li>
           <li class="radio-block">
-            <input class="visually-hidden radio-block__radio" id="toy" type="radio" name="type">
+            <input class="radio-block__radio" id="toy" type="radio" name="type">
             <label class="radio-block__text" for="toy">Детская игрушка</label>
           </li>
         </ul>
@@ -52,27 +61,27 @@
         <legend class="order-form__category-name">Цвет</legend>
         <ul class="order-form__list">
           <li class="checkbox-block">
-            <input class="visually-hidden checkbox-block__checkbox" id="white" type="checkbox" name="color" checked>
+            <input class="checkbox-block__checkbox" id="white" type="checkbox" name="color" checked>
             <label class="checkbox-block__text" for="white">Белый</label>
           </li>
           <li class="checkbox-block">
-            <input class="visually-hidden checkbox-block__checkbox" id="gray" type="checkbox" name="color" checked>
+            <input class="checkbox-block__checkbox" id="gray" type="checkbox" name="color" checked>
             <label class="checkbox-block__text" for="gray">Серый</label>
           </li>
           <li class="checkbox-block">
-            <input class="visually-hidden checkbox-block__checkbox" id="tiffani" type="checkbox" name="color">
+            <input class="checkbox-block__checkbox" id="tiffani" type="checkbox" name="color">
             <label class="checkbox-block__text" for="tiffani">"Тиффани"</label>
           </li>
           <li class="checkbox-block">
-            <input class="visually-hidden checkbox-block__checkbox" id="black" type="checkbox" name="color">
+            <input class="checkbox-block__checkbox" id="black" type="checkbox" name="color">
             <label class="checkbox-block__text" for="black">Черный</label>
           </li>
           <li class="checkbox-block">
-            <input class="visually-hidden checkbox-block__checkbox" id="pink" type="checkbox" name="color">
+            <input class="checkbox-block__checkbox" id="pink" type="checkbox" name="color">
             <label class="checkbox-block__text" for="pink">Розовый</label>
           </li>
           <li class="checkbox-block">
-            <input class="visually-hidden checkbox-block__checkbox" id="orange" type="checkbox" name="color">
+            <input class="checkbox-block__checkbox" id="orange" type="checkbox" name="color">
             <label class="checkbox-block__text" for="orange">Оранжевый</label>
           </li>
         </ul>
@@ -125,6 +134,9 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
+      <a class="page-footer__logo">
+        <img class="page-header__logo-image" src="img/logo-footer.svg" width="102" height="34" alt="Мишка">
+      </a>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__list-item">

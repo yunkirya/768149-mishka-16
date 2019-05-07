@@ -1,0 +1,42 @@
+.main-nav {
+  display: none;
+
+  width: 320px;
+  height: 395px;
+  margin: 0 auto;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.main-nav__list--show {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    display: flex;
+
+    width: 668px;
+    min-height: 56px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: 1050px;
+    margin-top: -47px;
+  }
+
+  .main-nav__list--show {
+    display: flex;
+  }
+}

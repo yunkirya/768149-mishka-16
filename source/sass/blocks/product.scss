@@ -1,11 +1,35 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  height: 375px;
+  margin: 0 auto;
+}
+
 .product__description {
   font-size: 13px;
   line-height: 30px;
-  color: #444444;
+  color: $text-darkgrey;
 }
 
 .product__price {
   font-size: 15px;
   line-height: 24px;
   font-weight: bold;
+}
+
+@media (min-width: $tablet-width) {
+  .product {
+    flex-wrap: wrap;
+    width: 668px;
+    height: 335px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product {
+    flex-wrap: nowrap;
+    width: 316px;
+    height: 660px;
+  }
 }
