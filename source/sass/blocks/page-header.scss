@@ -1,0 +1,45 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  min-height: 78px;
+  margin: 0 auto;
+}
+
+.page-header__logo {
+  width: 86px;
+  height: 35px;
+  margin: 21px auto;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    flex-direction: row;
+    width: 768px;
+    height: 180px;
+  }
+
+
+  .page-header__logo {
+    width: 113px;
+    height: 46px;
+
+    margin-left: 50px;
+    margin-right: -162px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: 1150px;
+    flex-direction: column;
+  }
+
+  .page-header__logo {
+    width: 149px;
+    height: 72px;
+
+    margin: 3px auto;
+    z-index: 1;
+  }
+}

@@ -1,8 +1,53 @@
+.page-catalog {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 2007px;
+  margin: 0 auto;
+}
+
 .page-catalog__title {
+  width: 246px;
+  height: 36px;
+  margin: 40px auto;
+
   font-size: 27px;
   line-height: 30px;
 }
 
 .page-catalog__wrapper {
+  width: 320px;
+  height: 176px;
+  margin: 0 auto;
+
   background-color: #f1f1f1;
+}
+
+.page-catalog__note {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-catalog {
+    width: 768px;
+    height: 2274px;
+  }
+
+  .page-catalog__wrapper {
+    width: 768px;
+    height: 225px;
+    margin-top: -88px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-catalog {
+    width: 1150px;
+    height: 1659px;
+  }
+
+  .page-catalog__wrapper {
+    width: 1150px;
+    height: 257px;
+  }
 }

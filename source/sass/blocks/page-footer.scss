@@ -1,3 +1,31 @@
-.page-footer {
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 160px;
+  margin: 0 auto;
+
   background-color: #f1f1f1;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__logo {
+    display: flex;
+  }
+
+  .page-footer__wrapper {
+    flex-direction: row;
+    width: 668px;
+    height: 143px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    width: 1050px;
+  }
 }

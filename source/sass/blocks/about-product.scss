@@ -1,5 +1,32 @@
+.about-product {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  height: 500px;
+  margin: 0 auto;
+}
+
 .about-product__description {
   font-size: 13px;
   line-height: 30px;
-  color: #444444;
+  color: $text-darkgrey;
+}
+
+@media (min-width: $tablet-width) {
+  .about-product {
+    width: 668px;
+    height: 744px;
+  }
+
+  .about-product__video {
+    order: -2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-product {
+    flex-wrap: wrap;
+    width: 1050px;
+    height: 450px;
+  }
 }

@@ -1,0 +1,17 @@
+.catalog__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.category__item {
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    flex-direction: row;
+  }
+}
